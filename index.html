@@ -2,7 +2,1134 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<m<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+<meta name="format-detection" content="telephone=no">
+
+<!-- SEO & Open Graph -->
+<title>Roamie — Find Your Creative Companion</title>
+<meta name="description" content="Book a verified local creative companion for 2–3 hours, a half day, or a full day. For anyone who travels with a phone and comes home wishing their photos looked as good as the day felt.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://roamie.uk">
+<meta property="og:title" content="Roamie — Find Your Creative Companion">
+<meta property="og:description" content="Book a verified local creative companion for your trip. Explorer, Creator or Pro Roamie — every budget, every city.">
+<meta property="og:image" content="https://roamie.uk/roamie-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@roamie.uk">
+<meta name="twitter:title" content="Roamie — Find Your Creative Companion">
+<meta name="twitter:description" content="Book a verified local creative companion for your trip. London launching now.">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://roamie.uk">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0c0b09; --cream:#f8f3ea; --warm:#f0e8d5;
+  --coral:#e05c3a; --gold:#f2a93b; --sage:#3a7a5a; --sky:#4a8db5;
+  --muted:#8c8478;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden;}
+.serif{font-family:'Cormorant Garamond',Georgia,'Times New Roman',serif;}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 48px;display:flex;justify-content:space-between;align-items:center;background:rgba(248,243,234,0.96);border-bottom:1px solid rgba(0,0,0,0.08);}
+@media(max-width:700px){nav{padding:14px 20px;}}
+.nav-logo{font-family:Georgia,serif;font-size:22px;font-weight:bold;color:var(--ink);}
+.nav-logo em{font-style:italic;color:var(--coral);}
+.nav-links{display:flex;gap:24px;align-items:center;}
+.nav-links a{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;transition:color 0.2s;}
+.nav-links a:hover{color:var(--ink);}
+@media(max-width:550px){.nav-links .hide{display:none;}}
+.nav-cta{background:var(--coral);color:white!important;padding:9px 20px;border-radius:100px;font-weight:700!important;}
+.nav-cta:hover{background:#c94e2e!important;}
+
+/* HERO */
+.hero{min-height:100vh;background:var(--ink);display:flex;flex-direction:column;padding-top:72px;position:relative;overflow:hidden;}
+.hero-blob1{position:absolute;top:-10%;right:-5%;width:55%;height:65%;background:radial-gradient(ellipse,rgba(224,92,58,0.25) 0%,transparent 70%);pointer-events:none;}
+.hero-blob2{position:absolute;bottom:-10%;left:-5%;width:40%;height:50%;background:radial-gradient(ellipse,rgba(74,141,181,0.15) 0%,transparent 70%);pointer-events:none;}
+.hero-inner{flex:1;display:flex;flex-direction:column;justify-content:center;padding:40px 24px 56px;position:relative;z-index:2;max-width:1060px;margin:0 auto;width:100%;}
+@media(min-width:700px){.hero-inner{padding:56px 56px 72px;}}
+
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(224,92,58,0.14);border:1px solid rgba(224,92,58,0.3);border-radius:100px;padding:7px 16px;margin-bottom:24px;width:fit-content;}
+.bdot{width:6px;height:6px;border-radius:50%;background:var(--coral);animation:blink 2s infinite;}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:0.2;}}
+.hero-badge span{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(248,243,234,0.65);}
+
+.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(44px,9vw,110px);font-weight:bold;color:#f8f3ea;line-height:0.95;letter-spacing:-2px;margin-bottom:24px;}
+.hero h1 .gold{color:var(--gold);font-style:italic;}
+.hero h1 .ghost{-webkit-text-stroke:1.5px rgba(248,243,234,0.18);color:transparent;}
+
+.hero-sub{font-size:16px;color:rgba(248,243,234,0.5);line-height:1.75;max-width:480px;margin-bottom:32px;}
+.hero-sub strong{color:rgba(248,243,234,0.85);font-weight:600;}
+
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:40px;}
+.btn-coral{background:var(--coral);color:white;padding:14px 24px;border-radius:100px;font-size:14px;font-weight:700;text-decoration:none;border:none;cursor:pointer;box-shadow:0 6px 24px rgba(224,92,58,0.4);display:inline-block;transition:background 0.2s;}
+.btn-coral:hover{background:#c94e2e;}
+.btn-ghost{background:transparent;color:rgba(248,243,234,0.65);padding:14px 24px;border-radius:100px;font-size:14px;font-weight:600;text-decoration:none;border:1px solid rgba(248,243,234,0.18);display:inline-block;}
+.btn-ghost:hover{border-color:rgba(248,243,234,0.4);color:#f8f3ea;}
+
+.hero-stats{display:flex;flex-wrap:wrap;padding-top:28px;border-top:1px solid rgba(255,255,255,0.08);gap:0;}
+.hst{padding-right:24px;margin-right:24px;border-right:1px solid rgba(255,255,255,0.08);}
+.hst:last-child{border:none;padding:0;margin:0;}
+@media(max-width:600px){
+  .hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .hst{padding:0;margin:0;border:none;}
+}
+.hst-n{font-family:Georgia,serif;font-size:28px;font-weight:bold;color:#f8f3ea;line-height:1;letter-spacing:-1px;}
+.hst-n em{color:var(--coral);font-style:normal;}
+.hst-l{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(248,243,234,0.22);margin-top:4px;}
+
+/* SHARED */
+.section{padding:64px 24px;}
+@media(min-width:700px){.section{padding:88px 56px;}}
+.inner{max-width:1040px;margin:0 auto;}
+.sec-label{font-size:10px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--coral);margin-bottom:14px;display:flex;align-items:center;gap:10px;}
+.sec-label::after{content:'';height:1px;width:28px;background:var(--coral);opacity:0.5;}
+h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(28px,5vw,54px);font-weight:bold;line-height:1.06;letter-spacing:-1px;margin-bottom:20px;}
+h2 em{color:var(--coral);font-style:italic;}
+.body-p{font-size:15px;color:#5c5650;line-height:1.8;max-width:580px;}
+hr.div{border:none;height:1px;background:linear-gradient(90deg,transparent,rgba(0,0,0,0.08) 20%,rgba(0,0,0,0.08) 80%,transparent);}
+
+/* HOW IT WORKS */
+.how-bg{background:var(--warm);}
+.steps{display:grid;grid-template-columns:1fr;gap:16px;margin-top:44px;}
+@media(min-width:700px){.steps{grid-template-columns:repeat(3,1fr);}}
+.sc{background:white;border-radius:18px;padding:28px 22px;border:1px solid rgba(0,0,0,0.07);position:relative;overflow:hidden;transition:transform 0.25s,box-shadow 0.25s;}
+.sc:hover{transform:translateY(-5px);box-shadow:0 20px 56px rgba(0,0,0,0.1);}
+.sc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--coral),var(--gold));}
+.sc-n{font-family:Georgia,serif;font-size:52px;font-weight:bold;color:rgba(0,0,0,0.05);line-height:1;margin-bottom:6px;}
+.sc-ico{font-size:24px;display:block;margin-bottom:12px;}
+.sc h3{font-family:Georgia,serif;font-size:19px;font-weight:bold;margin-bottom:10px;}
+.sc p{font-size:13px;color:var(--muted);line-height:1.75;max-width:none;}
+.sc-wide{grid-column:span 1;}
+@media(min-width:700px){.sc-wide{grid-column:span 2;}}
+
+/* BADGES */
+.badges-bg{background:var(--ink);}
+.badges-bg .sec-label{color:var(--gold);}
+.badges-bg .sec-label::after{background:var(--gold);}
+.badges-bg h2{color:#f8f3ea;}
+.badges-bg h2 em{color:var(--gold);}
+.badges-bg .body-p{color:rgba(248,243,234,0.42);}
+.badge-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:44px;}
+@media(min-width:700px){.badge-grid{grid-template-columns:repeat(3,1fr);}}
+.bc{border-radius:18px;padding:28px 22px;border:1px solid;transition:transform 0.25s;}
+.bc:hover{transform:translateY(-4px);}
+.bc.exp{background:rgba(58,122,90,0.09);border-color:rgba(58,122,90,0.22);}
+.bc.cre{background:rgba(74,141,181,0.09);border-color:rgba(74,141,181,0.22);}
+.bc.pro{background:rgba(242,169,59,0.09);border-color:rgba(242,169,59,0.22);}
+.bc-pill{display:inline-block;font-size:9px;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:4px 12px;border-radius:100px;margin-bottom:16px;}
+.exp .bc-pill{background:rgba(58,122,90,0.18);color:var(--sage);}
+.cre .bc-pill{background:rgba(74,141,181,0.18);color:var(--sky);}
+.pro .bc-pill{background:rgba(242,169,59,0.18);color:var(--gold);}
+.bc-ico{font-size:28px;display:block;margin-bottom:12px;}
+.bc h3{font-family:Georgia,serif;font-size:21px;font-weight:bold;color:#f8f3ea;margin-bottom:8px;}
+.bc p{font-size:13px;color:rgba(248,243,234,0.4);line-height:1.7;max-width:none;margin-bottom:18px;}
+.bc-rl{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(248,243,234,0.22);margin-bottom:4px;}
+.bc-rate{font-family:Georgia,serif;font-size:22px;font-weight:bold;}
+.exp .bc-rate{color:var(--sage);}
+.cre .bc-rate{color:var(--sky);}
+.pro .bc-rate{color:var(--gold);}
+
+/* TRUST */
+.trust-bg{background:var(--cream);}
+.trust-row{display:grid;grid-template-columns:1fr;gap:1px;margin-top:44px;background:rgba(0,0,0,0.06);border-radius:18px;overflow:hidden;}
+@media(min-width:600px){.trust-row{grid-template-columns:repeat(3,1fr);}}
+@media(min-width:900px){.trust-row{grid-template-columns:repeat(6,1fr);}}
+.ts{background:var(--cream);padding:22px 18px;transition:background 0.2s;}
+.ts:hover{background:var(--warm);}
+.ts-n{font-size:9px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--coral);opacity:0.6;margin-bottom:10px;}
+.ts h4{font-family:Georgia,serif;font-size:14px;font-weight:bold;margin-bottom:6px;}
+.ts p{font-size:12px;color:var(--muted);line-height:1.65;max-width:none;}
+.outcomes{display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px;}
+@media(min-width:600px){.outcomes{grid-template-columns:repeat(3,1fr);}}
+.oc{border-radius:14px;padding:22px 18px;border:1px solid;}
+.oc.ok{background:rgba(58,122,90,0.07);border-color:rgba(58,122,90,0.2);}
+.oc.mid{background:rgba(242,169,59,0.07);border-color:rgba(242,169,59,0.2);}
+.oc.bad{background:rgba(224,92,58,0.07);border-color:rgba(224,92,58,0.18);}
+.oc-ico{font-size:20px;display:block;margin-bottom:8px;}
+.oc h4{font-size:12px;font-weight:700;margin-bottom:5px;}
+.oc.ok h4{color:var(--sage);}
+.oc.mid h4{color:#a06b10;}
+.oc.bad h4{color:var(--coral);}
+.oc p{font-size:11px;color:var(--muted);line-height:1.6;max-width:none;}
+
+/* CITIES */
+.cities-bg{background:var(--warm);}
+.city-chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:36px;}
+.chip{display:flex;align-items:center;gap:7px;padding:9px 16px;border-radius:100px;font-size:13px;font-weight:600;transition:transform 0.2s;}
+.chip:hover{transform:translateY(-2px);}
+.chip.on{background:var(--coral);color:white;box-shadow:0 4px 18px rgba(224,92,58,0.3);}
+.chip.off{background:white;color:var(--muted);border:1px solid rgba(0,0,0,0.09);}
+.city-legend{margin-top:16px;display:flex;gap:18px;flex-wrap:wrap;}
+.cl{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted);}
+.cl-dot{width:7px;height:7px;border-radius:50%;}
+.cl-dot.a{background:var(--coral);}
+.cl-dot.s{background:rgba(0,0,0,0.16);}
+
+/* FORMS */
+.forms-bg{background:var(--ink);padding:64px 24px;}
+@media(min-width:700px){.forms-bg{padding:88px 56px;}}
+.forms-bg .sec-label{color:var(--gold);}
+.forms-bg .sec-label::after{background:var(--gold);}
+.forms-bg h2{color:#f8f3ea;}
+.forms-bg h2 em{color:var(--gold);}
+.forms-bg .body-p{color:rgba(248,243,234,0.4);}
+.forms-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:44px;}
+@media(min-width:700px){.forms-grid{grid-template-columns:1fr 1fr;}}
+.form-card{border-radius:20px;padding:38px 34px;border:1px solid;}
+@media(max-width:500px){.form-card{padding:26px 20px;}}
+.form-card.bk{background:rgba(224,92,58,0.08);border-color:rgba(224,92,58,0.22);}
+.form-card.jn{background:rgba(242,169,59,0.08);border-color:rgba(242,169,59,0.22);}
+.form-card .fi{font-size:30px;display:block;margin-bottom:16px;}
+.form-card h3{font-family:Georgia,serif;font-size:24px;font-weight:bold;color:#f8f3ea;margin-bottom:7px;}
+.form-card .fsub{font-size:13px;color:rgba(248,243,234,0.38);line-height:1.6;margin-bottom:26px;}
+.fg{margin-bottom:12px;}
+label{display:block;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(248,243,234,0.3);margin-bottom:6px;}
+input,select,textarea{width:100%;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 15px;font-size:13px;color:#f8f3ea;font-family:inherit;outline:none;transition:border-color 0.2s;-webkit-appearance:none;}
+input::placeholder,textarea::placeholder{color:rgba(248,243,234,0.18);}
+input:focus,select:focus,textarea:focus{border-color:rgba(224,92,58,0.5);background:rgba(255,255,255,0.1);}
+.form-card.jn input:focus,.form-card.jn select:focus,.form-card.jn textarea:focus{border-color:rgba(242,169,59,0.5);}
+select{cursor:pointer;}
+select option{background:#1a1812;color:#f8f3ea;}
+textarea{resize:vertical;min-height:80px;}
+.sbtn{width:100%;padding:14px;border-radius:10px;font-size:14px;font-weight:700;border:none;cursor:pointer;margin-top:6px;font-family:inherit;transition:all 0.2s;}
+.bk .sbtn{background:var(--coral);color:white;}
+.bk .sbtn:hover{background:#c94e2e;transform:translateY(-1px);}
+.jn .sbtn{background:var(--gold);color:var(--ink);}
+.jn .sbtn:hover{background:#d4922a;transform:translateY(-1px);}
+.success-msg{display:none;text-align:center;padding:32px 16px;}
+.success-msg .tick{font-size:36px;display:block;margin-bottom:10px;}
+.success-msg h4{font-family:Georgia,serif;font-size:20px;font-weight:bold;color:#f8f3ea;margin-bottom:7px;}
+.success-msg p{font-size:13px;color:rgba(248,243,234,0.38);max-width:none;}
+
+/* FOOTER */
+footer{background:var(--ink);border-top:1px solid rgba(255,255,255,0.05);padding:30px 48px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
+@media(max-width:700px){footer{padding:24px;flex-direction:column;text-align:center;}}
+.flogo{font-family:Georgia,serif;font-size:19px;font-weight:bold;color:#f8f3ea;}
+.flogo em{font-style:italic;color:var(--coral);}
+footer p{font-size:11px;color:rgba(248,243,234,0.16);max-width:none;}
+.flinks{display:flex;gap:20px;}
+.flinks a{font-size:12px;color:rgba(248,243,234,0.22);text-decoration:none;transition:color 0.2s;}
+.flinks a:hover{color:rgba(248,243,234,0.6);}
+
+/* SESSIONS GRID */
+@media(min-width:700px){
+  .sessions-grid{grid-template-columns:repeat(3,1fr)!important;}
+}
+
+/* QUIZ GRID */
+@media(max-width:600px){
+  #quizGrid{grid-template-columns:1fr!important;}
+}
+
+/* FOUNDER STORY */
+@media(max-width:700px){
+  .story-grid{grid-template-columns:1fr!important;}
+}
+/* FAQ */
+@media(max-width:600px){
+  .faq-grid{grid-template-columns:1fr!important;}
+}
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity 0.6s ease,transform 0.6s ease;}
+.reveal.on{opacity:1;transform:translateY(0);}
+</style>
+<!-- Google Analytics — replace GA_MEASUREMENT_ID with your actual ID from analytics.google.com -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID');
+</script> -->
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Ro<em>amie</em></div>
+  <div class="nav-links">
+    <a href="#how" class="hide">How it works</a>
+    <a href="#badges" class="hide">Badges</a>
+    <a href="#safety" class="hide">Peace of Mind</a>
+    <a href="#story" class="hide">Our Story</a>
+    <a href="#faq" class="hide">FAQ</a>
+    <a href="#join" class="nav-cta">Get Started</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero" id="hero">
+
+  <!-- VIDEO BACKGROUND — drop your AI video file here -->
+  <!-- To activate: upload your video to GitHub alongside index.html,
+       then replace 'roamie-hero.mp4' with your actual filename -->
+  <video
+    id="heroVideo"
+    autoplay
+    muted
+    loop
+    playsinline
+    poster=""
+    style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0;transition:opacity 1.2s ease;"
+    oncanplay="this.style.opacity='0.45'"
+  >
+    <!-- Uncomment and update src when your video is ready: -->
+    <!-- <source src="roamie-hero.mp4" type="video/mp4"> -->
+  </video>
+
+  <!-- Dark overlay for text readability over video -->
+  <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,rgba(12,11,9,0.55) 0%,rgba(12,11,9,0.3) 50%,rgba(12,11,9,0.7) 100%);z-index:1;pointer-events:none;"></div>
+
+  <!-- Blobs — only show when no video -->
+  <div class="hero-blob1" id="heroBlob1"></div>
+  <div class="hero-blob2" id="heroBlob2"></div>
+
+  <div class="hero-inner" style="position:relative;z-index:2;">
+    <div class="hero-badge">
+      <span class="bdot"></span>
+      <span>Now Launching · London 🇬🇧 · Paris &amp; New York Coming Soon</span>
+    </div>
+    <h1>Your city.<br>Your <span class="gold">Roamie.</span><br><span class="ghost">Your shot.</span></h1>
+    <p class="hero-sub">For anyone who travels with a phone and comes home wishing their photos looked as good as the day felt. Book a <strong>local creative companion</strong> for 2–3 hours, a half day, or a full day — <strong>every budget, every city, every story worth telling.</strong></p>
+    <div class="hero-btns">
+      <a href="#join" class="btn-coral">📸 Book a Roamie Day</a>
+      <a href="#join" class="btn-ghost">✨ Apply to be a Founding Roamie</a>
+    </div>
+    <!-- Availability + Safety strip -->
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px;">
+      <div style="display:flex;align-items:center;gap:7px;background:rgba(58,122,90,0.15);border:1px solid rgba(58,122,90,0.25);border-radius:100px;padding:7px 14px;">
+        <span style="width:6px;height:6px;border-radius:50%;background:var(--sage);display:inline-block;animation:blink 2s infinite;flex-shrink:0;"></span>
+        <span style="font-size:11px;font-weight:600;color:var(--sage);">Roamies available in London</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:100px;padding:7px 14px;">
+        <span style="font-size:11px;color:rgba(248,243,234,0.45);">🛡️ ID verified · Personally reviewed by founder</span>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hst"><div class="hst-n">3<em> Sessions</em></div><div class="hst-l">2–3hrs · 4–5hrs · Full Day</div></div>
+      <div class="hst"><div class="hst-n">3<em> Badges</em></div><div class="hst-l">Explorer · Creator · Pro</div></div>
+      <div class="hst"><div class="hst-n">100<em>%</em></div><div class="hst-l">Buyer Protected</div></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Hide blobs when video loads — the video replaces them
+  const vid = document.getElementById('heroVideo');
+  if (vid && vid.src) {
+    document.getElementById('heroBlob1').style.display = 'none';
+    document.getElementById('heroBlob2').style.display = 'none';
+  }
+</script>
+
+<!-- HOW IT WORKS -->
+<div class="section how-bg" id="how">
+  <div class="inner">
+    <div class="sec-label reveal">How It Works</div>
+    <h2 class="reveal">How it works in <em>six steps.</em></h2>
+    <p class="body-p reveal">Roamie turns a regular travel day into a full creative session — without the agency price tag, the planning stress, or the risk.</p>
+
+    <!-- VIDEO WALKTHROUGH — placeholder, activates when video is ready -->
+    <div class="reveal" style="margin:32px 0;border-radius:18px;overflow:hidden;position:relative;background:#0C0B09;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;" id="howVideoWrap">
+      <!-- Uncomment when video is ready:
+      <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;">
+        <source src="roamie-how-it-works.mp4" type="video/mp4">
+      </video>
+      -->
+      <!-- Placeholder until video is ready -->
+      <div style="text-align:center;padding:40px;">
+        <div style="font-size:48px;margin-bottom:16px;">🎬</div>
+        <div style="font-size:16px;font-weight:700;color:#F8F3EA;margin-bottom:8px;">See Roamie in action</div>
+        <div style="font-size:13px;color:rgba(248,243,234,0.4);line-height:1.7;max-width:380px;margin:0 auto;">A 60-second behind-the-scenes walkthrough — from booking to beautiful photos. Coming very soon.</div>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="sc reveal"><div class="sc-n">01</div><span class="sc-ico">🔍</span><h3>Browse &amp; Book</h3><p>Pick your city, choose your badge level, and browse local Roamies by style and rate. Secure booking with full buyer protection — payment held securely in escrow and released after your session is confirmed.</p></div>
+      <div class="sc reveal"><div class="sc-n">02</div><span class="sc-ico">🗺️</span><h3>Your Roamie Knows the City</h3><p>Your companion knows the best spots, hidden gems and perfect lighting locations. Creator and Pro badges plan a full route. Explorer badge brings local knowledge and great instincts.</p></div>
+      <div class="sc reveal"><div class="sc-n">03</div><span class="sc-ico">📸</span><h3>Shoot &amp; Create Together</h3><p>Your session unfolds across the city — your Roamie shoots on their own verified device — Explorer: iPhone 14+ / Creator: iPhone 15+ / Pro: professional camera — and helps you feel completely at ease throughout the day.</p></div>
+    </div>
+    <div class="steps" style="margin-top:14px;">
+      <div class="sc reveal"><div class="sc-n">04</div><span class="sc-ico">🖼️</span><h3>Roamie Reviews Your Gallery</h3><p>Your companion uploads every photo to your private Roamie Pixieset gallery. We review quality independently before you see anything. Your link arrives same day.</p></div>
+      <div class="sc sc-wide reveal"><div class="sc-n">05</div><span class="sc-ico">✨</span><h3>Your Full Gallery · Same Day</h3><p>Every photo from your session is uploaded to your private Pixieset gallery and shared with you on the same day — unedited, full resolution. Explorer and Creator: your full gallery is your deliverable. Pro Roamie: select your 10 favourites for professional editing, delivered within 5 days. Full Day sessions are approximately 7–8 hours including a lunch break.</p></div>
+      <div class="sc reveal"><div class="sc-n">06</div><span class="sc-ico">🛡️</span><h3>You Approve &amp; Release</h3><p>Send your closing confirmation in the WhatsApp group, or your 72-hour auto-release window passes. Disputes raised within 72 hours with evidence are reviewed by Roamie independently.</p></div>
+    </div>
+  </div>
+</div>
+
+<hr class="div">
+
+<!-- SESSION TIERS -->
+<div class="section" style="background:var(--ink);" id="sessions">
+  <div class="inner">
+    <div class="sec-label reveal" style="color:var(--gold);">Choose Your Session</div>
+    <h2 class="reveal" style="color:var(--cream);">Pick the session that fits<br><em style="color:var(--gold);">your trip.</em></h2>
+    <p class="body-p reveal" style="color:rgba(248,243,234,0.42);">Whether you have a few hours or a full day, Roamie has a session for every creator — from a quick city taster to a complete content library.</p>
+    <div style="display:grid;grid-template-columns:1fr;gap:14px;margin-top:44px;" class="reveal sessions-grid">
+
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:18px;padding:28px 22px;transition:border-color 0.2s;" onmouseover="this.style.borderColor='rgba(242,169,59,0.4)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
+        <div style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(248,243,234,0.3);margin-bottom:14px;">Taster</div>
+        <div style="font-family:Georgia,serif;font-size:42px;font-weight:bold;color:var(--cream);line-height:1;letter-spacing:-1px;">2–3<span style="font-size:20px;color:var(--muted);"> hrs</span></div>
+        <div style="height:1px;background:rgba(255,255,255,0.07);margin:20px 0;"></div>
+        <div style="font-size:13px;color:rgba(248,243,234,0.5);line-height:1.7;margin-bottom:20px;">Perfect for a quick city stop or first-time Roamie experience. One great location, their own quality smartphone and a local who knows exactly where to take you.</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+          <li style="font-size:12px;color:rgba(248,243,234,0.4);display:flex;gap:8px;"><span style="color:var(--sage);">✓</span> 1 location</li>
+          <li style="font-size:12px;color:rgba(248,243,234,0.4);display:flex;gap:8px;"><span style="color:var(--sage);">✓</span> Shot on companion's own smartphone</li>
+          <li style="font-size:12px;color:rgba(248,243,234,0.4);display:flex;gap:8px;"><span style="color:var(--sage);">✓</span> Warm encouragement throughout</li>
+          <li style="font-size:12px;color:rgba(248,243,234,0.4);display:flex;gap:8px;"><span style="color:var(--sage);">✓</span> Insider local knowledge</li>
+        </ul>
+        <div style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.06);">
+          <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(248,243,234,0.2);margin-bottom:10px;">Price By Badge</div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <div style="display:flex;justify-content:space-between;font-size:12px;"><span style="color:var(--sage);">🗺️ Explorer</span><span style="color:var(--sage);font-weight:700;">£45 – £70</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:12px;"><span style="color:var(--sky);">📱 Creator</span><span style="color:var(--sky);font-weight:700;">£120 – £180</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:12px;"><span style="color:var(--gold);">🏆 Pro Roamie</span><span style="color:var(--gold);font-weight:700;">£280 – £380</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background:rgba(242,169,59,0.07);border:2px solid rgba(242,169,59,0.35);border-radius:18px;padding:32px 26px;position:relative;transition:border-color 0.2s;" onmouseover="this.style.borderColor='rgba(242,169,59,0.6)'" onmouseout="this.style.borderColor='rgba(242,169,59,0.35)'">
+        <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--ink);font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:4px 14px;border-radius:100px;">Most Popular</div>
+        <div style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);opacity:0.7;margin-bottom:14px;">Half Day</div>
+        <div style="font-family:Georgia,serif;font-size:42px;font-weight:bold;color:var(--cream);line-height:1;letter-spacing:-1px;">4–5<span style="font-size:20px;color:var(--muted);"> hrs</span></div>
+        <div style="height:1px;background:rgba(255,255,255,0.07);margin:20px 0;"></div>
+        <div style="font-size:13px;color:rgba(248,243,234,0.5);line-height:1.7;margin-bottom:20px;">The sweet spot for weekend trips. Multiple locations, golden hour included, and enough time to really build creative chemistry and a strong content set.</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+          <li style="font-size:12px;color:rgba(248,243,234,0.4);display:flex;gap:8px;"><span style="color:var(--gold);">✓</span> 2–3 locations</li>
+          <li style="font-size:12px;color:rgba(248,243,234,0.4);display:flex;gap:8px;"><span style="color:var(--gold);">✓</span> Shot on companion's own device</li>
+          <li style="font-size:12px;color:rgba(248,243,234,0.4);display:flex;gap:8px;"><span style="color:var(--gold);">✓</span> Gentle encouragement throughout</li>
+          <li style="font-size:12px;color:rgba(248,243,234,0.4);display:flex;gap:8px;"><span style="color:var(--gold);">✓</span> Outfit change friendly</li>
+          <li style="font-size:12px;color:rgba(248,243,234,0.4);display:flex;gap:8px;"><span style="color:var(--gold);">✓</span> Optional Reels add-on</li>
+        </ul>
+        <div style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.06);">
+          <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(248,243,234,0.2);margin-bottom:10px;">Price By Badge</div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <div style="display:flex;justify-content:space-between;font-size:12px;"><span style="color:var(--sage);">🗺️ Explorer</span><span style="color:var(--sage);font-weight:700;">£80 – £120</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:12px;"><span style="color:var(--sky);">📱 Creator</span><span style="color:var(--sky);font-weight:700;">£200 – £300</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:12px;"><span style="color:var(--gold);">🏆 Pro Roamie</span><span style="color:var(--gold);font-weight:700;">£450 – £600</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:18px;padding:32px 26px;transition:border-color 0.2s;" onmouseover="this.style.borderColor='rgba(242,169,59,0.4)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
+        <div style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(248,243,234,0.3);margin-bottom:14px;">Full Experience</div>
+        <div style="font-family:Georgia,serif;font-size:42px;font-weight:bold;color:var(--cream);line-height:1;letter-spacing:-1px;">Full<span style="font-size:20px;color:var(--muted);"> day</span></div>
+        <div style="height:1px;background:rgba(255,255,255,0.07);margin:20px 0;"></div>
+        <div style="font-size:13px;color:rgba(248,243,234,0.5);line-height:1.7;margin-bottom:20px;">Approximately 7–8 hours together including a lunch break. Morning start through to golden hour — 4–5 locations, a full content library, and a month's worth of posts in one incredible day.</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+          <li style="font-size:12px;color:rgba(248,243,234,0.4);display:flex;gap:8px;"><span style="color:var(--coral);">✓</span> ~7–8 hours including lunch break</li>
+          <li style="font-size:12px;color:rgba(248,243,234,0.4);display:flex;gap:8px;"><span style="color:var(--coral);">✓</span> 4–5 locations across the city</li>
+          <li style="font-size:12px;color:rgba(248,243,234,0.4);display:flex;gap:8px;"><span style="color:var(--coral);">✓</span> Full gallery same day — unedited (Explorer & Creator)</li>
+          <li style="font-size:12px;color:rgba(248,243,234,0.4);display:flex;gap:8px;"><span style="color:var(--coral);">✓</span> 10 edited hero shots in 5 days (Pro Roamie only)</li>
+          <li style="font-size:12px;color:rgba(248,243,234,0.4);display:flex;gap:8px;"><span style="color:var(--coral);">✓</span> Reels included (Pro badge)</li>
+        </ul>
+        <div style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.06);">
+          <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(248,243,234,0.2);margin-bottom:10px;">Price By Badge</div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <div style="display:flex;justify-content:space-between;font-size:12px;"><span style="color:var(--sage);">🗺️ Explorer</span><span style="color:var(--sage);font-weight:700;">£150 – £200</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:12px;"><span style="color:var(--sky);">📱 Creator</span><span style="color:var(--sky);font-weight:700;">£320 – £450</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:12px;"><span style="color:var(--gold);">🏆 Pro Roamie</span><span style="color:var(--gold);font-weight:700;">£700 – £1,000+</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <p class="reveal" style="font-size:12px;color:rgba(248,243,234,0.22);margin-top:16px;font-style:italic;">* Prices shown are session rates set by companions. A small Buyer Protection fee (5% + £1.50, max £25) is added at checkout — launching with the Roamie app. Explorer is the most affordable entry point. Full Day = approximately 7–8 hours including a lunch break.</p>
+  </div>
+</div>
+
+<hr class="div">
+
+<!-- BADGES -->
+<div class="section badges-bg" id="badges">
+  <div class="inner">
+    <div class="sec-label reveal">The Badge System</div>
+    <h2 class="reveal">Know exactly what<br>you're <em>booking.</em></h2>
+    <p class="body-p reveal">Every Roamie companion is verified before they earn their badge. Choose the right level for your content — not sure? The guide below tells you exactly which badge fits your needs.</p>
+
+    <!-- BADGE QUIZ -->
+    <div class="reveal" style="background:rgba(0,0,0,0.15);border:1px solid rgba(224,92,58,0.2);border-radius:18px;padding:32px;margin-bottom:32px;">
+      <div style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--coral);margin-bottom:16px;">✨ Which Badge Do I Need?</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;" id="quizGrid">
+        <div style="background:rgba(58,122,90,0.1);border:1px solid rgba(58,122,90,0.2);border-radius:12px;padding:20px 16px;cursor:pointer;transition:all 0.2s;" onclick="showBadge('explorer')" onmouseover="this.style.borderColor='rgba(58,122,90,0.5)'" onmouseout="this.style.borderColor='rgba(58,122,90,0.2)'">
+          <div style="font-size:20px;margin-bottom:8px;">✨</div>
+          <div style="font-size:12px;font-weight:700;color:var(--sage);margin-bottom:6px;">Just Great Photos</div>
+          <div style="font-size:11px;color:rgba(248,243,234,0.4);line-height:1.6;">I'm a family, a traveller, or just starting out. I want beautiful memories from a beautiful city. No strict brief needed.</div>
+        </div>
+        <div style="background:rgba(74,141,181,0.1);border:1px solid rgba(74,141,181,0.2);border-radius:12px;padding:20px 16px;cursor:pointer;transition:all 0.2s;" onclick="showBadge('creator')" onmouseover="this.style.borderColor='rgba(74,141,181,0.5)'" onmouseout="this.style.borderColor='rgba(74,141,181,0.2)'">
+          <div style="font-size:20px;margin-bottom:8px;">🎯</div>
+          <div style="font-size:12px;font-weight:700;color:var(--sky);margin-bottom:6px;">Growing My Audience</div>
+          <div style="font-size:11px;color:rgba(248,243,234,0.4);line-height:1.6;">I create content and want someone who genuinely understands social media, trends, and what actually performs.</div>
+        </div>
+        <div style="background:rgba(242,169,59,0.08);border:1px solid rgba(242,169,59,0.2);border-radius:12px;padding:20px 16px;cursor:pointer;transition:all 0.2s;" onclick="showBadge('pro')" onmouseover="this.style.borderColor='rgba(242,169,59,0.5)'" onmouseout="this.style.borderColor='rgba(242,169,59,0.2)'">
+          <div style="font-size:20px;margin-bottom:8px;">🏆</div>
+          <div style="font-size:12px;font-weight:700;color:var(--gold);margin-bottom:6px;">Content is My Business</div>
+          <div style="font-size:11px;color:rgba(248,243,234,0.4);line-height:1.6;">I need professional quality — brand deals, high-res files, specific editing. My content directly affects my income.</div>
+        </div>
+      </div>
+      <div id="quizResult" style="display:none;margin-top:16px;padding:16px 20px;border-radius:12px;font-size:13px;line-height:1.7;"></div>
+    </div>
+
+    <div class="badge-grid">
+      <div class="bc exp reveal">
+        <span class="bc-pill">🗺️ Explorer</span>
+        <span class="bc-ico">✨</span>
+        <h3>For Everyone.</h3>
+        <p>Your city. Your memories. Your moment — captured beautifully. Explorer companions are verified locals who know every golden hour spot, every hidden street, every angle that makes a city look incredible. Verified iPhone 14+ or Samsung S24+ equivalent. Full high-quality gallery delivered to your private Pixieset gallery same day — unedited, full resolution, ready to download and use.</p>
+        <div style="margin:14px 0;padding:12px 14px;background:rgba(58,122,90,0.1);border-radius:10px;font-size:12px;color:rgba(248,243,234,0.6);line-height:1.6;">
+          <strong style="color:var(--sage);display:block;margin-bottom:6px;">✓ What's included:</strong>
+          Full session with a verified local · Beautiful London locations · Natural encouragement throughout · Full unedited gallery same day via Pixieset · High-quality iPhone 14+ images ready to use immediately
+        </div>
+        <div style="padding:12px 14px;background:rgba(224,92,58,0.08);border-radius:10px;font-size:12px;color:rgba(248,243,234,0.5);line-height:1.6;">
+          <strong style="color:var(--coral);display:block;margin-bottom:4px;">Not suitable if:</strong>
+          You need a professional camera · Brand partnerships requiring RAW files · Colour grading or professional editing
+        </div>
+        <div class="bc-rl" style="margin-top:16px;">Rates From</div>
+        <div class="bc-rate" style="font-size:15px;line-height:1.9;">2–3hrs: <strong>£45–£70</strong><br>4–5hrs: <strong>£80–£120</strong><br>Full Day: <strong>£150–£200</strong></div>
+      </div>
+
+      <div class="bc cre reveal">
+        <span class="bc-pill">📱 Creator</span>
+        <span class="bc-ico">🎯</span>
+        <h3>For Growing Creators.</h3>
+        <p>You have a vision. You know your aesthetic. You just need someone who truly gets it — understands trending formats, knows what performs, and shoots with a social-first eye. Creator companions are verified content natives who live and breathe the platforms you create for. Verified iPhone 15+ or Samsung S25+ equivalent — a meaningful step up in camera quality for social-first content. Full gallery delivered to your private Pixieset gallery same day — unedited, full resolution, ready to post.</p>
+        <div style="margin:14px 0;padding:12px 14px;background:rgba(74,141,181,0.1);border-radius:10px;font-size:12px;color:rgba(248,243,234,0.6);line-height:1.6;">
+          <strong style="color:var(--sky);display:block;margin-bottom:6px;">✓ What's included:</strong>
+          Full session with a verified social media native · Platform-first shooting style · Gentle creative guidance throughout · Full unedited gallery same day via Pixieset · iPhone 15+ quality — 48MP camera, better low light, shoots ready for Instagram and TikTok without editing
+        </div>
+        <div style="padding:12px 14px;background:rgba(224,92,58,0.08);border-radius:10px;font-size:12px;color:rgba(248,243,234,0.5);line-height:1.6;">
+          <strong style="color:var(--coral);display:block;margin-bottom:4px;">Not suitable if:</strong>
+          You need professional editing or colour grading · Brand deals requiring high-res RAW files · Specific technical post-processing
+        </div>
+        <div class="bc-rl" style="margin-top:16px;">Rates From</div>
+        <div class="bc-rate" style="font-size:15px;line-height:1.9;">2–3hrs: <strong>£120–£180</strong><br>4–5hrs: <strong>£200–£300</strong><br>Full Day: <strong>£320–£450</strong></div>
+      </div>
+
+      <div class="bc pro reveal">
+        <span class="bc-pill">🏆 Pro Roamie</span>
+        <span class="bc-ico">🎬</span>
+        <h3>For Serious Creators.</h3>
+        <p>Your content is your business. You need it to look like it. Pro Roamie companions are verified professional photographers — their own camera, their own equipment, their own proven portfolio. Full session planning, full gallery same day, PLUS 10 professionally edited hero shots with colour grading delivered within 5 days. This is not a photographer for hire. This is a creative partner who knows your city and your content.</p>
+        <div style="margin:14px 0;padding:12px 14px;background:rgba(242,169,59,0.08);border-radius:10px;font-size:12px;color:rgba(248,243,234,0.6);line-height:1.6;">
+          <strong style="color:var(--gold);display:block;margin-bottom:6px;">✓ What's included:</strong>
+          Full session with a verified professional photographer · Professional camera & equipment · Full unedited gallery same day via Pixieset · You select your 10 favourite shots within 72 hours · 10 professionally edited hero shots with colour grading — delivered within 5 days
+        </div>
+        <div style="padding:12px 14px;background:rgba(224,92,58,0.08);border-radius:10px;font-size:12px;color:rgba(248,243,234,0.5);line-height:1.6;">
+          <strong style="color:var(--coral);display:block;margin-bottom:4px;">Investment level:</strong>
+          Premium professional service including editing from £280 — worth every penny if content is your business
+        </div>
+        <div class="bc-rl" style="margin-top:16px;">Rates From</div>
+        <div class="bc-rate" style="font-size:15px;line-height:1.9;">2–3hrs: <strong>£280–£380</strong><br>4–5hrs: <strong>£450–£600</strong><br>Full Day: <strong>£700–£1,000+</strong></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST -->
+<div class="section trust-bg">
+  <div class="inner">
+    <div class="sec-label reveal">Buyer Protection</div>
+    <h2 class="reveal">Your money moves only<br>when you're <em>happy.</em></h2>
+    <p class="body-p reveal">Payment is held in Roamie escrow until you've reviewed and approved your session. Disputes must be raised within 72 hours of gallery delivery with specific reference to your Creative Brief. Payment auto-releases after 72 hours if no dispute is raised.</p>
+    <div class="trust-row reveal" style="grid-template-columns:repeat(6,1fr);">
+      <div class="ts"><div class="ts-n">01</div><h4>Book &amp; Pay</h4><p>Session fee + Buyer Protection fee held securely in Roamie escrow. Companion confirmed.</p></div>
+      <div class="ts"><div class="ts-n">02</div><h4>Your Session</h4><p>Your Roamie shoots on their own verified device. Explorer: iPhone 14+ · Creator: iPhone 15+ · Pro: professional camera. Gentle encouragement throughout.</p></div>
+      <div class="ts"><div class="ts-n">03</div><h4>Roamie Reviews</h4><p>Your companion uploads every photo to a Roamie-monitored Pixieset gallery. We check quality before you see anything.</p></div>
+      <div class="ts"><div class="ts-n">04</div><h4>Your Gallery Arrives</h4><p>Full unedited gallery in your private Pixieset gallery same day. <strong>Explorer & Creator:</strong> this is your full deliverable — download and use immediately. <strong>Pro Roamie:</strong> select your 10 favourites within 72 hours for editing.</p></div>
+      <div class="ts"><div class="ts-n">05</div><h4>Pro Edits Delivered</h4><p><strong>Pro Roamie only:</strong> your 10 chosen photos are professionally edited and delivered within 5 days. Explorer & Creator receive their full gallery unedited.</p></div>
+      <div class="ts"><div class="ts-n">06</div><h4>You Approve</h4><p>Happy with your photos? Payment releases to your Roamie. Not happy? We step in for you.</p></div>
+    </div>
+    <div class="outcomes reveal" style="margin-top:12px;">
+      <div class="oc ok"><span class="oc-ico">😍</span><h4>You're Happy</h4><p>Full payment to your Roamie. Leave a review and book again.</p></div>
+      <div class="oc mid"><span class="oc-ico">🤔</span><h4>Minor Issues</h4><p>Roamie mediates. Partial refund issued. Fair for both sides.</p></div>
+      <div class="oc bad"><span class="oc-ico">😔</span><h4>Not Delivered</h4><p>Full refund to you. Companion risks badge removal.</p></div>
+    </div>
+    <!-- Buyer Protection Fee explanation -->
+    <div class="reveal" style="margin-top:20px;background:rgba(224,92,58,0.06);border:1px solid rgba(224,92,58,0.18);border-radius:16px;padding:24px 22px;display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+      <div>
+        <div style="font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--coral);margin-bottom:10px;">🛡️ What is the Buyer Protection Fee?</div>
+        <p style="font-size:13px;color:var(--muted);line-height:1.75;">A small Buyer Protection fee is added to every booking. It covers your escrow payment holding, dispute resolution, quality assurance, and Roamie's commitment to step in if anything goes wrong. Your money is never at risk.</p>
+      </div>
+      <div>
+        <div style="font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--coral);margin-bottom:10px;">💷 How much is it?</div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--muted);padding-bottom:6px;border-bottom:1px solid rgba(0,0,0,0.06);">
+            <span>Taster Session</span><span style="font-weight:700;color:var(--ink);">5% + £1.50</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--muted);padding-bottom:6px;border-bottom:1px solid rgba(0,0,0,0.06);">
+            <span>Half Day Session</span><span style="font-weight:700;color:var(--ink);">5% + £1.50</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--muted);">
+            <span>Full Day Session</span><span style="font-weight:700;color:var(--ink);">5% + £1.50 (max £25)</span>
+          </div>
+        </div>
+        <p style="font-size:11px;color:rgba(12,11,9,0.35);margin-top:10px;font-style:italic;">Launching with the Roamie app. MVP bookings are fee-free. 🎁</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SAFETY SECTION -->
+<div id="safety" style="background:#0C0B09;padding:56px 24px;">
+  <div class="inner">
+    <div class="sec-label reveal" style="color:var(--sage);">Peace of Mind</div>
+    <h2 class="reveal" style="color:#F8F3EA;">We've thought of <em style="color:var(--sage);font-style:italic;">everything.</em></h2>
+    <p class="reveal" style="font-size:15px;color:rgba(248,243,234,0.45);line-height:1.8;max-width:560px;margin-bottom:36px;">A Roamie day should feel easy, joyful, and completely carefree. Here's how we make sure it stays that way — for everyone.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;" class="reveal">
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(58,122,90,0.25);border-radius:16px;padding:22px 20px;">
+        <div style="font-size:20px;margin-bottom:10px;">🪪</div>
+        <div style="font-size:13px;font-weight:700;color:#F8F3EA;margin-bottom:6px;">Every Roamie is verified</div>
+        <div style="font-size:12px;color:rgba(248,243,234,0.5);line-height:1.75;">Government-issued ID, a personal video call with our founder, and a thorough application review — before anyone earns their badge.</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(58,122,90,0.25);border-radius:16px;padding:22px 20px;">
+        <div style="font-size:20px;margin-bottom:10px;">💬</div>
+        <div style="font-size:13px;font-weight:700;color:#F8F3EA;margin-bottom:6px;">Our team is with you throughout</div>
+        <div style="font-size:12px;color:rgba(248,243,234,0.5);line-height:1.75;">Every session has a dedicated group with you, your Roamie, and our team. If you ever need us — we're one message away, the whole time.</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(58,122,90,0.25);border-radius:16px;padding:22px 20px;">
+        <div style="font-size:20px;margin-bottom:10px;">⭐</div>
+        <div style="font-size:13px;font-weight:700;color:#F8F3EA;margin-bottom:6px;">Real reviews, real people</div>
+        <div style="font-size:12px;color:rgba(248,243,234,0.5);line-height:1.75;">Every companion builds a verified review history from real creators. You always know who you're spending the day with before you book.</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(58,122,90,0.25);border-radius:16px;padding:22px 20px;">
+        <div style="font-size:20px;margin-bottom:10px;">🚪</div>
+        <div style="font-size:13px;font-weight:700;color:#F8F3EA;margin-bottom:6px;">Always your choice</div>
+        <div style="font-size:12px;color:rgba(248,243,234,0.5);line-height:1.75;">Not feeling it? You can end any session at any time, no questions asked. Just message the group and we'll take care of everything.</div>
+      </div>
+    </div>
+
+    <div style="margin-top:14px;padding:18px 22px;background:rgba(58,122,90,0.1);border:1px solid rgba(58,122,90,0.2);border-radius:14px;display:flex;align-items:center;gap:14px;" class="reveal">
+      <div style="font-size:24px;flex-shrink:0;">🌍</div>
+      <div style="font-size:13px;color:rgba(248,243,234,0.6);line-height:1.7;"><strong style="color:#F8F3EA;">During our London launch, our founder personally attends every booking.</strong> You're not just using a platform — you're part of something being built with care from the ground up.</div>
+    </div>
+
+    <div style="margin-top:10px;padding:14px 18px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:12px;" class="reveal">
+      <p style="font-size:11px;color:rgba(248,243,234,0.2);line-height:1.75;">Roamie is a creative companion platform. We connect creators with verified local companions for photography sessions. All companions are independent contractors. Roamie facilitates the booking and provides support throughout every session. Each party is responsible for their own conduct. By booking through Roamie, you agree to our <a href="mailto:hello@roamie.uk?subject=Terms and Conditions Request" style="color:rgba(248,243,234,0.35);">Terms & Conditions</a>.</p>
+    </div>
+  </div>
+</div>
+
+<hr class="div">
+
+<!-- FOUNDER STORY -->
+<div class="section" style="background:var(--warm);" id="story">
+  <div class="inner">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;" class="story-grid">
+      <div>
+        <div class="sec-label reveal">Why Roamie Exists</div>
+        <h2 class="reveal">It started with a selfie<br>in <em>Italy.</em></h2>
+        <p class="body-p reveal" style="margin-bottom:20px;">Three trips in one month. Italy with my family. The South of France. Milan with my sister-in-law. Some of the most beautiful places in the world.</p>
+        <p class="body-p reveal" style="margin-bottom:20px;">And every single time — the same moment. We didn't want to hand our phone to a stranger. When we did, we felt rushed, uncomfortable, and the photos never captured how it actually felt to be there. So we took selfies instead.</p>
+        <p class="body-p reveal" style="margin-bottom:20px;"><em style="color:var(--coral);">"I just wished we had someone with us. A local who knew the right spots, made us feel relaxed, and actually captured the day."</em></p>
+        <p class="body-p reveal" style="margin-bottom:32px;">That feeling is what started Roamie. Not a business plan — a real moment that millions of travellers experience every single day. And nobody had built anything to fix it.</p>
+        <div class="reveal" style="display:flex;align-items:center;gap:16px;padding-top:24px;border-top:1px solid rgba(0,0,0,0.08);">
+          <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--coral),#c94e2e);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">👩</div>
+          <div>
+            <div style="font-size:14px;font-weight:700;color:var(--ink);">Eda Yazar</div>
+            <div style="font-size:12px;color:var(--muted);">Founder, Roamie · London</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal" style="display:flex;flex-direction:column;gap:16px;">
+        <div style="background:white;border-radius:18px;padding:24px;border:1px solid rgba(0,0,0,0.07);position:relative;">
+          <div style="font-size:32px;color:var(--coral);font-family:Georgia,serif;line-height:1;margin-bottom:8px;">"</div>
+          <p style="font-size:14px;color:var(--ink);line-height:1.8;font-style:italic;">I travelled alone to London and left with incredible photos and a completely different experience of the city. My Roamie knew every hidden spot. I felt confident the whole time.</p>
+          <div style="margin-top:16px;display:flex;align-items:center;gap:10px;">
+            <div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#c8820a);display:flex;align-items:center;justify-content:center;font-size:14px;">🌸</div>
+            <div>
+              <div style="font-size:12px;font-weight:600;color:var(--ink);">Sofia M.</div>
+              <div style="font-size:11px;color:var(--muted);">London · Explorer Session</div>
+            </div>
+            <div style="margin-left:auto;font-size:12px;color:var(--gold);">★★★★★</div>
+          </div>
+          <div style="position:absolute;top:12px;right:16px;font-size:9px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);background:rgba(224,92,58,0.08);padding:3px 8px;border-radius:100px;">Beta Tester</div>
+        </div>
+        <div style="background:white;border-radius:18px;padding:24px;border:1px solid rgba(0,0,0,0.07);position:relative;">
+          <div style="font-size:32px;color:var(--coral);font-family:Georgia,serif;line-height:1;margin-bottom:8px;">"</div>
+          <p style="font-size:14px;color:var(--ink);line-height:1.8;font-style:italic;">We're a family of four. We always ended up with selfies or awkward stranger photos. One Roamie session and we finally have photos we actually want to frame.</p>
+          <div style="margin-top:16px;display:flex;align-items:center;gap:10px;">
+            <div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--sage),#2d6048);display:flex;align-items:center;justify-content:center;font-size:14px;">👨‍👩‍👧‍👦</div>
+            <div>
+              <div style="font-size:12px;font-weight:600;color:var(--ink);">The Williams Family</div>
+              <div style="font-size:11px;color:var(--muted);">London · Explorer Full Day</div>
+            </div>
+            <div style="margin-left:auto;font-size:12px;color:var(--gold);">★★★★★</div>
+          </div>
+          <div style="position:absolute;top:12px;right:16px;font-size:9px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral);background:rgba(224,92,58,0.08);padding:3px 8px;border-radius:100px;">Beta Tester</div>
+        </div>
+        <div style="background:rgba(224,92,58,0.06);border:1px solid rgba(224,92,58,0.15);border-radius:14px;padding:16px 18px;font-size:12px;color:var(--muted);line-height:1.6;">
+          📸 <strong style="color:var(--ink);">Real testimonials coming soon.</strong> We're in our London launch phase and personally attending every session. If you'd like to be one of our first featured Roamie stories, <a href="#join" style="color:var(--coral);font-weight:600;">book your session here.</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="div">
+
+<!-- FAQ -->
+<div class="section" id="faq" style="background:var(--cream);">
+  <div class="inner">
+    <div class="sec-label reveal">FAQ</div>
+    <h2 class="reveal">Everything you need<br>to <em>know.</em></h2>
+    <p class="body-p reveal">Still have questions? We've answered the most common ones below — and you can always reach us at hello@roamie.uk.</p>
+    <div class="reveal faq-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:40px;">
+
+      <div style="background:white;border:1px solid rgba(0,0,0,0.07);border-radius:16px;padding:24px 22px;">
+        <div style="font-size:14px;font-weight:700;color:var(--ink);margin-bottom:10px;">What if I'm not happy with my photos?</div>
+        <div style="font-size:13px;color:var(--muted);line-height:1.75;">Your payment is held in escrow and only released after you confirm you're happy. For Explorer and Creator bookings, you review your full unedited gallery before approving. For Pro Roamie bookings, you review your 10 edited hero shots before approving. If you're unhappy, contact us at hello@roamie.uk within 72 hours — Roamie reviews the gallery independently and issues a full or partial refund where appropriate.</div>
+      </div>
+
+      <div style="background:white;border:1px solid rgba(0,0,0,0.07);border-radius:16px;padding:24px 22px;">
+        <div style="font-size:14px;font-weight:700;color:var(--ink);margin-bottom:10px;">What if I feel uncomfortable during the session?</div>
+        <div style="font-size:13px;color:var(--muted);line-height:1.75;">Every session has a dedicated WhatsApp group with you, your Roamie, and our team. You can message us at any point. You also have the right to end the session at any time — we will arrange a fair resolution. Every companion is ID verified before their first booking.</div>
+      </div>
+
+      <div style="background:white;border:1px solid rgba(0,0,0,0.07);border-radius:16px;padding:24px 22px;">
+        <div style="font-size:14px;font-weight:700;color:var(--ink);margin-bottom:10px;">Do I need to know how to pose?</div>
+        <div style="font-size:13px;color:var(--muted);line-height:1.75;">Not at all. Your Roamie will offer natural, friendly direction throughout the session — angles, movement, expressions. You don't need any experience. The whole point is to help you feel relaxed and confident. Most people are surprised how comfortable it feels.</div>
+      </div>
+
+      <div style="background:white;border:1px solid rgba(0,0,0,0.07);border-radius:16px;padding:24px 22px;">
+        <div style="font-size:14px;font-weight:700;color:var(--ink);margin-bottom:10px;">Can families book a session?</div>
+        <div style="font-size:13px;color:var(--muted);line-height:1.75;">Absolutely — families are one of our most popular bookings. The Explorer badge is perfect for families who want beautiful travel memories without the awkward selfies or rushing strangers. Your Roamie will find the best spots and make the whole family feel at ease.</div>
+      </div>
+
+      <div style="background:white;border:1px solid rgba(0,0,0,0.07);border-radius:16px;padding:24px 22px;">
+        <div style="font-size:14px;font-weight:700;color:var(--ink);margin-bottom:10px;">What equipment does my Roamie use?</div>
+        <div style="font-size:13px;color:var(--muted);line-height:1.75;">Explorer and Creator companions shoot on their own verified smartphone — minimum iPhone 14 or Samsung Galaxy S24 equivalent. Pro Roamie companions bring their own professional camera and equipment. All photos are delivered via your private Roamie Pixieset gallery.</div>
+      </div>
+
+      <div style="background:white;border:1px solid rgba(0,0,0,0.07);border-radius:16px;padding:24px 22px;">
+        <div style="font-size:14px;font-weight:700;color:var(--ink);margin-bottom:10px;">What exactly is included in the price?</div>
+        <div style="font-size:13px;color:var(--muted);line-height:1.75;"><strong>Explorer & Creator:</strong> your Roamie's time, location scouting, natural direction throughout the session, and the full unedited gallery delivered same day via your private Pixieset gallery. High-quality iPhone 14+ images ready to download and use immediately — no editing needed.<br><br><strong>Pro Roamie:</strong> everything above, plus a professional camera, full session planning, and 10 professionally edited hero shots with colour grading delivered within 5 days. Reels available as an optional add-on.</div>
+      </div>
+
+      <div style="background:white;border:1px solid rgba(0,0,0,0.07);border-radius:16px;padding:24px 22px;">
+        <div style="font-size:14px;font-weight:700;color:var(--ink);margin-bottom:10px;">How does payment protection work?</div>
+        <div style="font-size:13px;color:var(--muted);line-height:1.75;">You pay Roamie at booking — your companion is not paid yet. Your money is held securely.<br><br><strong>Explorer & Creator:</strong> after your session, your companion uploads your full gallery to Pixieset same day. You review your gallery. Confirm via WhatsApp or allow 72-hour window to pass. Payment releases.<br><br><strong>Pro Roamie:</strong> same process, but you also select 10 photos for editing and approve the final edited shots before payment releases.<br><br>If there's a dispute, Roamie steps in and reviews the gallery independently. You are always protected.</div>
+      </div>
+
+      <div style="background:white;border:1px solid rgba(0,0,0,0.07);border-radius:16px;padding:24px 22px;">
+        <div style="font-size:14px;font-weight:700;color:var(--ink);margin-bottom:10px;">What is the Buyer Protection fee?</div>
+        <div style="font-size:13px;color:var(--muted);line-height:1.75;">A small fee (5% + £1.50, max £25) added to every booking to cover your escrow protection, dispute resolution, and quality assurance. This launches with the Roamie app — MVP bookings are currently fee-free. 🎁</div>
+      </div>
+
+      <div style="background:white;border:1px solid rgba(0,0,0,0.07);border-radius:16px;padding:24px 22px;">
+        <div style="font-size:14px;font-weight:700;color:var(--ink);margin-bottom:10px;">Can I cancel my booking?</div>
+        <div style="font-size:13px;color:var(--muted);line-height:1.75;">Yes. More than 48 hours before your session: full refund. 24–48 hours before: 50% refund. Less than 24 hours before: no refund. Companion cancellations follow the same policy — if your Roamie cancels within 24 hours, you receive a full refund and priority rebooking.</div>
+      </div>
+
+      <div style="background:white;border:1px solid rgba(0,0,0,0.07);border-radius:16px;padding:24px 22px;">
+        <div style="font-size:14px;font-weight:700;color:var(--ink);margin-bottom:10px;">How do I choose the right badge?</div>
+        <div style="font-size:13px;color:var(--muted);line-height:1.75;">Use our badge quiz above — it takes 10 seconds and tells you exactly which level fits your needs. In short: Explorer for relaxed memories, Creator for social media content, Pro for brand-level quality. Still not sure? Email us and we'll recommend the right level for your trip.</div>
+      </div>
+
+    </div>
+    <div class="reveal" style="margin-top:20px;text-align:center;padding:20px;background:rgba(224,92,58,0.05);border:1px solid rgba(224,92,58,0.15);border-radius:14px;">
+      <p style="font-size:13px;color:var(--muted);">Still have a question? Email us at <a href="mailto:hello@roamie.uk" style="color:var(--coral);font-weight:600;">hello@roamie.uk</a> — we reply within 24 hours.</p>
+    </div>
+  </div>
+</div>
+
+<hr class="div">
+  <div class="inner">
+    <div class="sec-label reveal">Where We Are</div>
+    <h2 class="reveal">Find your Roamie in the<br>world's most <em>beautiful cities.</em></h2>
+    <p class="body-p reveal">Launching in the cities that matter most to content creators — with more added every month.</p>
+    <div class="city-chips reveal">
+      <div class="chip on"><span>🇬🇧</span> London</div>
+      <div class="chip off"><span>🇫🇷</span> Paris</div>
+      <div class="chip off"><span>🇺🇸</span> New York</div>
+      <div class="chip off"><span>🇦🇪</span> Dubai</div>
+      <div class="chip off"><span>🇮🇩</span> Bali</div>
+      <div class="chip off"><span>🇯🇵</span> Tokyo</div>
+      <div class="chip off"><span>🇮🇹</span> Rome</div>
+      <div class="chip off"><span>🇹🇭</span> Bangkok</div>
+      <div class="chip off"><span>🇹🇷</span> Istanbul</div>
+      <div class="chip off"><span>🇬🇷</span> Santorini</div>
+      <div class="chip off"><span>🇵🇹</span> Lisbon</div>
+      <div class="chip off"><span>🇲🇽</span> Mexico City</div>
+    </div>
+    <div class="city-legend reveal">
+      <span class="cl"><span class="cl-dot a"></span> Available Now</span>
+      <span class="cl"><span class="cl-dot s"></span> Coming Soon</span>
+    </div>
+  </div>
+</div>
+
+<!-- FORMS -->
+<div class="forms-bg" id="join">
+  <div class="inner">
+    <div class="sec-label reveal">Get Started</div>
+    <h2 class="reveal">Ready to <em>Roamie?</em></h2>
+    <p class="body-p reveal">Whether you're a creator wanting the perfect shot or a local wanting to earn doing what you love — it starts here.</p>
+
+    <!-- ROAMIE JOURNEY -->
+    <div class="reveal" style="margin-bottom:32px;background:rgba(255,255,255,0.04);border:1px solid rgba(242,169,59,0.25);border-radius:18px;padding:28px 24px;">
+      <div style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;">🏆 The Roamie Journey — Earn More as You Grow</div>
+      <p style="font-size:13px;color:rgba(248,243,234,0.5);line-height:1.75;margin-bottom:20px;">Every session you complete moves you forward. Roamie companions earn a higher share and unlock exclusive opportunities as they grow with us.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;">
+        <div style="background:rgba(58,122,90,0.1);border:1px solid rgba(58,122,90,0.25);border-radius:14px;padding:18px 16px;">
+          <div style="font-size:20px;margin-bottom:8px;">🌱</div>
+          <div style="font-size:13px;font-weight:700;color:#F8F3EA;margin-bottom:4px;">Rising Roamie</div>
+          <div style="font-size:11px;color:var(--sage);font-weight:600;margin-bottom:8px;">0–24 bookings · 80% earnings</div>
+          <div style="font-size:11px;color:rgba(248,243,234,0.45);line-height:1.65;">Standard profile · Full platform support · Roamie matching system</div>
+        </div>
+        <div style="background:rgba(74,141,181,0.1);border:1px solid rgba(74,141,181,0.25);border-radius:14px;padding:18px 16px;">
+          <div style="font-size:20px;margin-bottom:8px;">⭐</div>
+          <div style="font-size:13px;font-weight:700;color:#F8F3EA;margin-bottom:4px;">Roamie Star</div>
+          <div style="font-size:11px;color:var(--sky);font-weight:600;margin-bottom:8px;">25–49 bookings · 82% earnings</div>
+          <div style="font-size:11px;color:rgba(248,243,234,0.45);line-height:1.65;">Star badge on profile · Priority in search · Featured in city pages</div>
+        </div>
+        <div style="background:rgba(242,169,59,0.08);border:1px solid rgba(242,169,59,0.25);border-radius:14px;padding:18px 16px;">
+          <div style="font-size:20px;margin-bottom:8px;">🏆</div>
+          <div style="font-size:13px;font-weight:700;color:#F8F3EA;margin-bottom:4px;">Elite Roamie</div>
+          <div style="font-size:11px;color:var(--gold);font-weight:600;margin-bottom:8px;">50+ bookings · 85% earnings</div>
+          <div style="font-size:11px;color:rgba(248,243,234,0.45);line-height:1.65;">Elite badge · Top of search · Featured in Roamie marketing · Early city access</div>
+        </div>
+      </div>
+      <div style="margin-top:14px;padding:12px 16px;background:rgba(242,169,59,0.06);border-radius:10px;font-size:12px;color:rgba(248,243,234,0.4);line-height:1.6;">
+        💡 Founding Roamies who join now start their journey from day one — every booking counts towards your milestone from the very first session.
+      </div>
+    </div>
+
+    <div class="forms-grid">
+
+      <div class="form-card bk reveal">
+        <span class="fi">📸</span>
+        <h3>Book a Roamie Day</h3>
+        <p class="fsub">We're in our London launch phase — bookings are personally matched by our founder. Tell us the basics and we'll be in touch within 24 hours. <strong style="color:var(--gold);">MVP bookings are Buyer Protection fee-free. 🎁</strong></p>
+        <form id="bkF" action="https://formspree.io/f/roamie-booking" method="POST" onsubmit="submitForm(event,'bk')">
+          <input type="hidden" name="_subject" value="🎉 New Roamie Booking Request!">
+          <input type="hidden" name="_replyto" value="roamie.uk@gmail.com">
+          <div class="fg"><label>Your Name</label><input type="text" name="name" placeholder="e.g. Sofia Martinez" required></div>
+          <div class="fg"><label>Email Address</label><input type="email" name="email" placeholder="your@email.com" required></div>
+          <div class="fg"><label>Instagram Handle</label><input type="text" name="instagram" placeholder="@yourhandle" required></div>
+          <div class="fg"><label>City You're Visiting</label>
+            <select name="city">
+              <option value="" disabled selected>Select a city</option>
+              <option>London 🇬🇧 — Available Now</option>
+              <option>Paris 🇫🇷 — Coming Soon</option>
+              <option>New York 🇺🇸 — Coming Soon</option>
+              <option>Dubai 🇦🇪 — Coming Soon</option>
+              <option>Bali 🇮🇩 — Coming Soon</option>
+              <option>Other — add me to waitlist</option>
+            </select>
+          </div>
+          <div class="fg"><label>Session Length</label>
+            <select name="session">
+              <option value="" disabled selected>Choose a session</option>
+              <option>Taster — 2–3 Hours</option>
+              <option>Half Day — 4–5 Hours</option>
+              <option>Full Day — ~7–8 Hours</option>
+            </select>
+          </div>
+          <div class="fg"><label>Badge Level</label>
+            <select name="badge" id="bookingBadge">
+              <option value="" disabled selected>Choose a level</option>
+              <option value="Explorer — just great photos, relaxed">Explorer — just great photos, relaxed</option>
+              <option value="Creator — growing my audience, social-first">Creator — growing my audience, social-first</option>
+              <option value="Pro Roamie — content is my business">Pro Roamie — content is my business</option>
+              <option value="Not sure — help me decide">Not sure — help me decide</option>
+            </select>
+          </div>
+          <div class="fg"><label>Approximate Date</label><input type="date" name="date"></div>
+          <div class="fg"><label>Tell us your vibe (optional)</label><textarea name="vibe" placeholder="e.g. minimalist, warm tones, Shoreditch area, 2 outfit changes..."></textarea></div>
+          <div style="margin:16px 0 8px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.08);">
+            <div style="font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:4px;">How did you find us?</div>
+            <div style="font-size:11px;color:rgba(248,243,234,0.3);margin-bottom:12px;">Helps us understand where Roamie is growing</div>
+          </div>
+          <div class="fg"><label>How did you hear about Roamie?</label>
+            <select name="referral_source">
+              <option value="" disabled selected>Select one</option>
+              <option>A friend recommended me</option>
+              <option>Instagram</option>
+              <option>TikTok</option>
+              <option>GetYourGuide</option>
+              <option>Viator</option>
+              <option>Google Search</option>
+              <option>Mumpreneur Network</option>
+              <option>Kids n'Joy community</option>
+              <option>Press or blog</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="fg" id="friendNameField" style="display:none;">
+            <label>Your friend's name <span style="font-size:11px;color:var(--gold);font-weight:400;">— you'll both get £15 off your next session 🎁</span></label>
+            <input type="text" name="referred_by" placeholder="e.g. Sofia Martinez or @sofiacreates" id="friendNameInput">
+          </div>
+          <div style="background:rgba(58,122,90,0.08);border:1px solid rgba(58,122,90,0.2);border-radius:10px;padding:12px 14px;margin-bottom:12px;font-size:11px;color:rgba(248,243,234,0.5);line-height:1.6;">
+            🛡️ <strong style="color:rgba(248,243,234,0.7);">You're protected.</strong> Payment is only released after you approve your edited photos. We'll follow up with a full creative brief process before confirming your booking.
+          </div>
+          <button type="submit" class="sbtn">Send Booking Request →</button>
+        </form>
+        <div class="success-msg" id="bkS">
+          <span class="tick">🎉</span>
+          <h4>Request received!</h4>
+          <p style="margin-bottom:16px;">Here's what happens next:</p>
+          <div style="display:flex;flex-direction:column;gap:10px;text-align:left;margin-bottom:16px;">
+            <div style="display:flex;gap:10px;font-size:12px;color:rgba(248,243,234,0.5);">
+              <span style="background:var(--coral);color:white;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0;">1</span>
+              <span>We review your request and match you with the right Roamie — within 24 hours</span>
+            </div>
+            <div style="display:flex;gap:10px;font-size:12px;color:rgba(248,243,234,0.5);">
+              <span style="background:var(--coral);color:white;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0;">2</span>
+              <span>We email you to discuss your creative brief and confirm your Roamie</span>
+            </div>
+            <div style="display:flex;gap:10px;font-size:12px;color:rgba(248,243,234,0.5);">
+              <span style="background:var(--coral);color:white;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0;">3</span>
+              <span>Payment is taken securely — held until you approve your photos</span>
+            </div>
+          </div>
+          <div style="background:rgba(242,169,59,0.15);border:1px solid rgba(242,169,59,0.3);border-radius:10px;padding:12px 14px;font-size:12px;color:rgba(248,243,234,0.8);line-height:1.65;margin-bottom:12px;">
+              🎁 <strong style="color:var(--gold);">Know someone who'd love Roamie?</strong> Share roamie.uk with a friend. When they mention your name at booking — you both get <strong style="color:var(--gold);">£15 off</strong> your next session.
+            </div>
+          <p style="font-size:12px;color:rgba(248,243,234,0.3);">Check your email — we'll be in touch shortly! 🌍</p>
+        </div>
+      </div>
+
+      <div class="form-card jn reveal">
+        <span class="fi">✨</span>
+        <h3>Apply to be a Founding Roamie</h3>
+        <p class="fsub">We're selecting our first 20 Roamies in London. Founding companions start their Roamie Journey from day one — every booking counts. Reach 25 bookings and earn 82%. Reach 50 and earn 85%.</p>
+        <form id="jnF" action="https://formspree.io/f/roamie-companion" method="POST" onsubmit="submitForm(event,'jn')">
+          <input type="hidden" name="_subject" value="🌟 New Roamie Companion Application!">
+          <input type="hidden" name="_replyto" value="roamie.uk@gmail.com">
+          <div class="fg"><label>Your Name</label><input type="text" name="name" placeholder="e.g. Marco Rossi" required></div>
+          <div class="fg"><label>Email Address</label><input type="email" name="email" placeholder="your@email.com" required></div>
+          <div class="fg"><label>Instagram or TikTok Handle</label><input type="text" name="social" placeholder="@yourhandle" required></div>
+          <div class="fg"><label>Your City</label>
+            <select name="city">
+              <option value="" disabled selected>Where are you based?</option>
+              <option>London 🇬🇧</option><option>Paris 🇫🇷</option><option>New York 🇺🇸</option>
+              <option>Dubai 🇦🇪</option><option>Bali 🇮🇩</option><option>Tokyo 🇯🇵</option>
+              <option>Rome 🇮🇹</option><option>Bangkok 🇹🇭</option><option>Istanbul 🇹🇷</option>
+              <option>Santorini 🇬🇷</option><option>Lisbon 🇵🇹</option><option>Mexico City 🇲🇽</option>
+              <option>Other city</option>
+            </select>
+          </div>
+          <div class="fg"><label>Badge You're Applying For</label>
+            <select name="badge">
+              <option value="" disabled selected>Select your level</option>
+              <option>Explorer — I love my city, great eye, iPhone 14+ or Samsung S24+</option>
+              <option>Creator — I create content, social media native, iPhone 15+ or Samsung S25+</option>
+              <option>Pro Roamie — I'm a professional photographer with my own camera</option>
+            </select>
+          </div>
+          <div class="fg"><label>Your Smartphone Device</label><input type="text" name="device" placeholder="e.g. iPhone 15 Pro, Samsung S24 Ultra..."></div>
+          <div class="fg"><label>Portfolio or Profile Link</label><input type="text" name="portfolio" placeholder="Instagram, website, Pixieset gallery..."></div>
+          <div class="fg"><label>Why Do You Want to Be a Roamie?</label><textarea name="why" placeholder="Tell us about yourself and what makes you a great creative companion..."></textarea></div>
+          <div style="margin:16px 0 8px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.08);">
+            <div style="font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:4px;">How did you find us?</div>
+            <div style="font-size:11px;color:rgba(248,243,234,0.3);margin-bottom:12px;">Helps us understand where our companion community is growing</div>
+          </div>
+          <div class="fg"><label>How did you hear about Roamie?</label>
+            <select name="companion_referral_source">
+              <option value="" disabled selected>Select one</option>
+              <option>A fellow Roamie recommended me</option>
+              <option>A friend told me</option>
+              <option>Instagram</option>
+              <option>TikTok</option>
+              <option>Facebook Group</option>
+              <option>Google Search</option>
+              <option>Mumpreneur Network</option>
+              <option>Kids n'Joy community</option>
+              <option>University / College</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="fg" id="companionFriendField" style="display:none;">
+            <label>Who referred you? <span style="font-size:11px;color:var(--gold);font-weight:400;">— they'll earn a bonus when you complete your first 3 bookings 🎁</span></label>
+            <input type="text" name="companion_referred_by" placeholder="e.g. Maya Chen or @mayaroamie" id="companionFriendInput">
+          </div>
+          <button type="submit" class="sbtn">Apply to Be a Roamie →</button>
+        </form>
+        <div class="success-msg" id="jnS">
+          <span class="tick">🌟</span>
+          <h4>Application received!</h4>
+          <p style="margin-bottom:16px;">Here's what happens next:</p>
+          <div style="display:flex;flex-direction:column;gap:10px;text-align:left;margin-bottom:16px;">
+            <div style="display:flex;gap:10px;font-size:12px;color:rgba(248,243,234,0.5);">
+              <span style="background:var(--gold);color:var(--ink);border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0;">1</span>
+              <span>We review your profile, social media and portfolio — within 48 hours</span>
+            </div>
+            <div style="display:flex;gap:10px;font-size:12px;color:rgba(248,243,234,0.5);">
+              <span style="background:var(--gold);color:var(--ink);border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0;">2</span>
+              <span>We invite you to a short verification call or task based on your badge level</span>
+            </div>
+            <div style="display:flex;gap:10px;font-size:12px;color:rgba(248,243,234,0.5);">
+              <span style="background:var(--gold);color:var(--ink);border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0;">3</span>
+              <span>Badge awarded — you're live and bookings can start coming in</span>
+            </div>
+          </div>
+          <p style="font-size:12px;color:rgba(248,243,234,0.3);">Welcome to the Roamie family! Check your email. 🌍</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="flogo">Ro<em>amie</em></div>
+  <p>© 2026 Roamie · Every story deserves to be captured beautifully.</p>
+  <div class="flinks">
+    <a href="https://instagram.com/roamie.uk" target="_blank">Instagram</a>
+    <a href="https://tiktok.com/@roamie.uk" target="_blank">TikTok</a>
+    <a href="mailto:hello@roamie.uk">Contact</a>
+    <a href="mailto:hello@roamie.uk?subject=Privacy Policy Request">Privacy Policy</a>
+    <a href="mailto:hello@roamie.uk?subject=Terms and Conditions Request">Terms</a>
+  </div>
+  <p style="font-size:11px;color:rgba(248,243,234,0.2);margin-top:12px;">Roamie is operated by Eda Yazar · London, UK · hello@roamie.uk · roamie.uk</p>
+</footer>
+
+<script>
+const quizResults = {
+  explorer: { color: 'rgba(58,122,90,0.15)', border: 'rgba(58,122,90,0.3)', text: '🟢 <strong style="color:#3a7a5a;">Explorer is perfect for you!</strong><br>Whether you\'re a family capturing travel memories, a millennial who deserves great photos, or a pre-influencer just starting your journey — Explorer gives you a verified local who knows every golden hour spot, every hidden gem, and every angle that makes a city look incredible. Shot on a verified iPhone 14+ or Samsung S24+. Delivered to a Roamie-monitored Pixieset gallery same day.' },
+  creator: { color: 'rgba(74,141,181,0.15)', border: 'rgba(74,141,181,0.3)', text: '🔵 <strong style="color:#4a8db5;">Creator is perfect for you!</strong><br>You have a vision and you\'re building something real. A Creator companion understands the platforms you create for, knows what trending content looks like in real life, and shoots with a social-first eye. Verified iPhone 14+ or Samsung S24+. Delivered to a Roamie-monitored Pixieset gallery same day.' },
+  pro: { color: 'rgba(242,169,59,0.12)', border: 'rgba(242,169,59,0.3)', text: '🏆 <strong style="color:#f2a93b;">Pro Roamie is perfect for you!</strong><br>Your content is your business and it needs to look like it. A Pro Roamie companion is a verified professional photographer bringing their own camera, their own expertise, and their own proven portfolio. Full session planning, professional editing, colour grading, and reels included. This is not a photographer for hire — this is a creative partner who knows your city.' }
+};
+
+const badgeValues = {
+  explorer: 'Explorer — just great photos, relaxed',
+  creator: 'Creator — growing my audience, social-first',
+  pro: 'Pro Roamie — content is my business'
+};
+
+function showBadge(type) {
+  const result = quizResults[type];
+  const el = document.getElementById('quizResult');
+  el.style.display = 'block';
+  el.style.background = result.color;
+  el.style.border = '1px solid ' + result.border;
+  el.style.color = 'rgba(12,11,9,0.75)';
+  el.innerHTML = result.text + `
+    <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;">
+      <a href="#join" onclick="prefillBadge('${type}')" style="display:inline-block;background:var(--coral);color:white;padding:10px 20px;border-radius:100px;font-size:12px;font-weight:700;text-decoration:none;">
+        📸 Book as ${type === 'explorer' ? 'Explorer' : type === 'creator' ? 'Creator' : 'Pro Roamie'} →
+      </a>
+      <span style="font-size:11px;color:rgba(12,11,9,0.4);align-self:center;">Takes you straight to the booking form</span>
+    </div>`;
+  el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function prefillBadge(type) {
+  setTimeout(() => {
+    const select = document.getElementById('bookingBadge');
+    if (select) {
+      select.value = badgeValues[type];
+      select.style.transition = 'border-color 0.3s, box-shadow 0.3s';
+      select.style.borderColor = 'var(--coral)';
+      select.style.boxShadow = '0 0 0 3px rgba(224,92,58,0.2)';
+      setTimeout(() => {
+        select.style.borderColor = '';
+        select.style.boxShadow = '';
+      }, 2000);
+    }
+  }, 600);
+}
+
+// Referral source conditional logic — show friend name field when relevant
+document.addEventListener('DOMContentLoaded', function() {
+  // Booking form
+  const refSource = document.querySelector('select[name="referral_source"]');
+  const friendField = document.getElementById('friendNameField');
+  if (refSource && friendField) {
+    refSource.addEventListener('change', function() {
+      const show = this.value === 'A friend recommended me';
+      friendField.style.display = show ? 'block' : 'none';
+      if (!show) document.getElementById('friendNameInput').value = '';
+    });
+  }
+  // Companion form
+  const compSource = document.querySelector('select[name="companion_referral_source"]');
+  const compFriendField = document.getElementById('companionFriendField');
+  if (compSource && compFriendField) {
+    compSource.addEventListener('change', function() {
+      const show = ['A fellow Roamie recommended me','A friend told me'].includes(this.value);
+      compFriendField.style.display = show ? 'block' : 'none';
+      if (!show) document.getElementById('companionFriendInput').value = '';
+    });
+  }
+});
+
+const obs = new IntersectionObserver(entries=>{
+  entries.forEach((e,i)=>{
+    if(e.isIntersecting){setTimeout(()=>e.target.classList.add('on'),i*70);obs.unobserve(e.target);}
+  });
+},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+async function submitForm(e, t) {
+  e.preventDefault();
+  const form = document.getElementById(t+'F');
+  const succ = document.getElementById(t+'S');
+  const btn = form.querySelector('button[type="submit"]');
+
+  // Validate required fields
+  let ok = true;
+  form.querySelectorAll('input[required]').forEach(i=>{
+    if(!i.value.trim()){i.style.borderColor='rgba(224,92,58,0.7)';ok=false;}
+    else i.style.borderColor='';
+  });
+  if(!ok) return;
+
+  // Show sending state
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+
+  try {
+    const data = new FormData(form);
+    const response = await fetch('https://formspree.io/f/' + (t==='bk' ? 'xdkozpjq' : 'xpwzgqlb'), {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      // Success — show confirmation
+      form.style.cssText='opacity:0;transition:opacity 0.3s;';
+      setTimeout(()=>{
+        form.style.display='none';
+        succ.style.display='block';
+        succ.style.opacity='0';
+        succ.style.transition='opacity 0.4s';
+        setTimeout(()=>succ.style.opacity='1',20);
+      },300);
+    } else {
+      // Formspree error — fallback to mailto
+      const subject = t==='bk' ? 'New Roamie Booking Request' : 'New Roamie Companion Application';
+      const fields = Array.from(data.entries()).map(([k,v])=>`${k}: ${v}`).join('\n');
+      window.location.href = `mailto:roamie.uk@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(fields)}`;
+    }
+  } catch(err) {
+    // Network error — fallback to mailto
+    const subject = t==='bk' ? 'New Roamie Booking Request' : 'New Roamie Companion Application';
+    const data2 = new FormData(form);
+    const fields = Array.from(data2.entries()).map(([k,v])=>`${k}: ${v}`).join('\n');
+    window.location.href = `mailto:roamie.uk@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(fields)}`;
+  }
+}
+</script>
+</body>
+</html>
+eta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
