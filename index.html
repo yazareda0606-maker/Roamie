@@ -284,16 +284,11 @@ footer p{font-size:11px;color:rgba(248,243,234,0.16);max-width:none;}
     style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0;transition:opacity 1.2s ease;"
     oncanplay="this.style.opacity='0.45'"
   >
-    <!-- Uncomment and update src when your video is ready: -->
-    <!-- <source src="roamie-hero.mp4" type="video/mp4"> -->
+    <source src="roamie-hero.mp4" type="video/mp4">
   </video>
 
   <!-- Dark overlay for text readability over video -->
   <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,rgba(12,11,9,0.55) 0%,rgba(12,11,9,0.3) 50%,rgba(12,11,9,0.7) 100%);z-index:1;pointer-events:none;"></div>
-
-  <!-- Blobs — only show when no video -->
-  <div class="hero-blob1" id="heroBlob1"></div>
-  <div class="hero-blob2" id="heroBlob2"></div>
 
   <div class="hero-inner" style="position:relative;z-index:2;">
     <div class="hero-badge">
@@ -324,15 +319,6 @@ footer p{font-size:11px;color:rgba(248,243,234,0.16);max-width:none;}
   </div>
 </div>
 
-<script>
-  // Hide blobs when video loads — the video replaces them
-  const vid = document.getElementById('heroVideo');
-  if (vid && vid.src) {
-    document.getElementById('heroBlob1').style.display = 'none';
-    document.getElementById('heroBlob2').style.display = 'none';
-  }
-</script>
-
 <!-- HOW IT WORKS -->
 <div class="section how-bg" id="how">
   <div class="inner">
@@ -341,18 +327,10 @@ footer p{font-size:11px;color:rgba(248,243,234,0.16);max-width:none;}
     <p class="body-p reveal">Roamie turns a regular travel day into a full creative session — without the agency price tag, the planning stress, or the risk.</p>
 
     <!-- VIDEO WALKTHROUGH — placeholder, activates when video is ready -->
-    <div class="reveal" style="margin:32px 0;border-radius:18px;overflow:hidden;position:relative;background:#0C0B09;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;" id="howVideoWrap">
-      <!-- Uncomment when video is ready:
+    <div class="reveal" style="margin:32px auto;border-radius:24px;overflow:hidden;position:relative;background:#0C0B09;aspect-ratio:9/16;max-width:380px;box-shadow:0 30px 80px rgba(0,0,0,0.35);" id="howVideoWrap">
       <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;">
         <source src="roamie-how-it-works.mp4" type="video/mp4">
       </video>
-      -->
-      <!-- Placeholder until video is ready -->
-      <div style="text-align:center;padding:40px;">
-        <div style="font-size:48px;margin-bottom:16px;">🎬</div>
-        <div style="font-size:16px;font-weight:700;color:#F8F3EA;margin-bottom:8px;">See Roamie in action</div>
-        <div style="font-size:13px;color:rgba(248,243,234,0.4);line-height:1.7;max-width:380px;margin:0 auto;">A 60-second behind-the-scenes walkthrough — from booking to beautiful photos. Coming very soon.</div>
-      </div>
     </div>
     <div class="steps">
       <div class="sc reveal"><div class="sc-n">01</div><span class="sc-ico">🔍</span><h3>Browse &amp; Book</h3><p>Pick your city, choose your badge level, and browse local Roamies by style and rate. Secure booking with full buyer protection — payment held securely in escrow and released after your session is confirmed.</p></div>
