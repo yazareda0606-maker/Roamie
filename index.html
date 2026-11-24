@@ -859,7 +859,7 @@ footer p{font-size:11px;color:rgba(248,243,234,0.16);max-width:none;}
         <p class="fsub">We're in our London launch phase — bookings are personally matched by our founder. Tell us the basics and we'll be in touch within 24 hours. <strong style="color:var(--gold);">MVP bookings are Buyer Protection fee-free. 🎁</strong></p>
         <form id="bkF" action="https://formspree.io/f/mjgqongy" method="POST" onsubmit="submitForm(event,'bk')">
           <input type="hidden" name="_subject" value="🎉 New Roamie Booking Request!">
-          <input type="hidden" name="_replyto" value="roamie.uk@gmail.com">
+          <input type="hidden" name="_replyto" value="hello@roamie.uk">
           <div class="fg"><label>Your Name</label><input type="text" name="name" placeholder="e.g. Sofia Martinez" required></div>
           <div class="fg"><label>Email Address</label><input type="email" name="email" placeholder="your@email.com" required></div>
           <div class="fg"><label>Instagram Handle</label><input type="text" name="instagram" placeholder="@yourhandle" required></div>
@@ -973,7 +973,7 @@ footer p{font-size:11px;color:rgba(248,243,234,0.16);max-width:none;}
         <p class="fsub">We're selecting our first 20 Roamies in London. Founding companions start their Roamie Journey from day one — every booking counts. Start at 70% earnings, reach 25 bookings and earn 73%, reach 50 and earn 75%.</p>
         <form id="jnF" action="https://formspree.io/f/xrewlneg" method="POST" onsubmit="submitForm(event,'jn')">
           <input type="hidden" name="_subject" value="🌟 New Roamie Companion Application!">
-          <input type="hidden" name="_replyto" value="roamie.uk@gmail.com">
+          <input type="hidden" name="_replyto" value="hello@roamie.uk">
           <div class="fg"><label>Your Name</label><input type="text" name="name" placeholder="e.g. Marco Rossi" required></div>
           <div class="fg"><label>Email Address</label><input type="email" name="email" placeholder="your@email.com" required></div>
           <div class="fg"><label>Instagram or TikTok Handle</label><input type="text" name="social" placeholder="@yourhandle" required></div>
@@ -1185,14 +1185,14 @@ async function submitForm(e, t) {
       // Formspree error — fallback to mailto
       const subject = t==='bk' ? 'New Roamie Booking Request' : 'New Roamie Companion Application';
       const fields = Array.from(data.entries()).map(([k,v])=>`${k}: ${v}`).join('\n');
-      window.location.href = `mailto:roamie.uk@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(fields)}`;
+      window.location.href = `mailto:hello@roamie.uk?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(fields)}`;
     }
   } catch(err) {
     // Network error — fallback to mailto
     const subject = t==='bk' ? 'New Roamie Booking Request' : 'New Roamie Companion Application';
     const data2 = new FormData(form);
     const fields = Array.from(data2.entries()).map(([k,v])=>`${k}: ${v}`).join('\n');
-    window.location.href = `mailto:roamie.uk@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(fields)}`;
+    window.location.href = `mailto:hello@roamie.uk?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(fields)}`;
   }
 }
 </script>
